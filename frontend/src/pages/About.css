@@ -1,0 +1,262 @@
+.about-page {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 98px 0 24px;
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 48px;
+  align-items: end;
+}
+
+.about-intro h2 {
+  max-width: 670px;
+  font-size: 3.15rem;
+  line-height: 1.04;
+  letter-spacing: 0;
+}
+
+.about-intro > p {
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.about-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.about-impact-card,
+.about-panel,
+.about-domains,
+.about-app-card,
+.about-cta {
+  border: 1px solid rgba(147, 166, 184, 0.14);
+  background: var(--panel);
+  box-shadow: 0 18px 58px rgba(0, 0, 0, 0.18);
+}
+
+.about-impact-card {
+  display: grid;
+  gap: 8px;
+  min-height: 136px;
+  padding: 24px;
+  border-radius: 18px;
+}
+
+.about-impact-card strong {
+  color: var(--cyan);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.about-impact-card span {
+  color: var(--muted);
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.about-panel {
+  position: relative;
+  min-height: 300px;
+  padding: 28px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about-panel::after {
+  content: '';
+  position: absolute;
+  right: -58px;
+  bottom: -58px;
+  width: 190px;
+  height: 190px;
+  border: 1px solid rgba(22, 200, 255, 0.22);
+  border-radius: 50%;
+}
+
+.panel-index {
+  display: inline-grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 42px;
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+  color: var(--cyan);
+  background: var(--cyan-soft);
+  font-weight: 900;
+}
+
+.about-panel h3,
+.about-domains h3,
+.about-app-card h3,
+.about-cta h3 {
+  font-size: 1.75rem;
+  line-height: 1.14;
+  letter-spacing: 0;
+}
+
+.about-panel p,
+.about-app-card p {
+  margin-top: 14px;
+  color: var(--muted);
+}
+
+.tag-cloud,
+.about-domain-list,
+.app-feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag-cloud {
+  margin-top: 24px;
+}
+
+.tag-cloud span,
+.about-domain-list span,
+.app-feature-grid span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  background: rgba(22, 200, 255, 0.08);
+}
+
+.tag-cloud span {
+  padding: 8px 12px;
+  font-size: 0.92rem;
+}
+
+.about-domains {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  gap: 26px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 28px;
+  border-radius: 20px;
+}
+
+.about-domain-list span {
+  padding: 12px 16px;
+  font-weight: 800;
+}
+
+.about-app-card {
+  display: grid;
+  grid-template-columns: 0.76fr 1fr;
+  gap: 34px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 30px;
+  border-radius: 22px;
+  background:
+    linear-gradient(135deg, rgba(22, 200, 255, 0.13), rgba(73, 242, 178, 0.05)),
+    var(--panel);
+}
+
+.app-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.app-feature-grid span {
+  min-height: 64px;
+  padding: 16px;
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.about-cta {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+  padding: 28px;
+  border-radius: 20px;
+}
+
+.about-cta h3 {
+  max-width: 780px;
+  font-size: 1.5rem;
+}
+
+.about-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  flex: 0 0 auto;
+  padding: 12px 18px;
+  border-radius: 12px;
+  color: #031018;
+  background: var(--cyan);
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: 0 18px 48px rgba(22, 200, 255, 0.22);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.about-cta a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 54px rgba(22, 200, 255, 0.24);
+}
+
+@media (max-width: 980px) {
+  .about-intro,
+  .about-story-grid,
+  .about-domains,
+  .about-app-card {
+    grid-template-columns: 1fr;
+  }
+
+  .about-intro {
+    gap: 20px;
+  }
+
+  .about-intro h2 {
+    font-size: 2.55rem;
+  }
+
+  .about-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 620px) {
+  .about-page {
+    width: min(100% - 28px, 1180px);
+    padding-top: 74px;
+  }
+
+  .about-intro h2 {
+    font-size: 2.05rem;
+  }
+
+  .about-impact-grid,
+  .app-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-panel,
+  .about-domains,
+  .about-app-card,
+  .about-cta {
+    padding: 22px;
+  }
+}

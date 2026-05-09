@@ -1,0 +1,74 @@
+[
+  {
+    "memberName": "Person 1",
+    "memberPosition": "Club Head",
+    "memberCollege": "College 1",
+    "memberImageurl": ""
+  },
+  {
+    "memberName": "Person 2",
+    "memberPosition": "Vice Club Head",
+    "memberCollege": "College 2",
+    "memberImageurl": ""
+  },
+  {
+    "memberName": "Person 3",
+    "memberPosition": "Technical Team Head",
+    "memberCollege": "College 3",
+    "memberImageurl": ""
+  },
+  {
+    "memberName": "Person 4",
+    "memberPosition": "Events Team Head",
+    "memberCollege": "College 4",
+    "memberImageurl": ""
+  },
+  {
+    "memberName": "Person 5",
+    "memberPosition": "Design Team Head",
+    "memberCollege": "College 5",
+    "memberImageurl": ""
+  },
+  {
+    "memberName": "Person 6",
+    "memberPosition": "Content Team Head",
+    "memberCollege": "College 6",
+    "memberImageurl": ""
+  },
+  {
+    "memberName": "Person 7",
+    "memberPosition": "Social Media Lead",
+    "memberCollege": "College 7",
+    "memberImageurl": ""
+  },
+  {
+    "memberName": "Person 8",
+    "memberPosition": "Community Lead",
+    "memberCollege": "College 8",
+    "memberImageurl": ""
+  },
+  {
+    "memberName": "Person 9",
+    "memberPosition": "Workshop Coordinator",
+    "memberCollege": "College 9",
+    "memberImageurl": ""
+  },
+  {
+    "memberName": "Person 10",
+    "memberPosition": "Project Coordinator",
+    "memberCollege": "College 10",
+    "memberImageurl": ""
+  },
+  {
+    "memberName": "Person 11",
+    "memberPosition": "Mentorship Coordinator",
+    "memberCollege": "College 11",
+    "memberImageurl": ""
+  },
+  {
+    "memberName": "Person 12",
+    "memberPosition": "Operations Lead",
+    "memberCollege": "College 12",
+    "memberImageurl": ""
+  }
+]

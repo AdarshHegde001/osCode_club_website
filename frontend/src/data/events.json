@@ -1,0 +1,57 @@
+[
+  {
+    "id": "codewave-hackathon",
+    "eventName": "CodeWave Hackathon",
+    "eventType": "Hackathon",
+    "eventDates": "June 14-15, 2026",
+    "venue": "Main Auditorium, College 1",
+    "registrationFees": "₹299 per team",
+    "teamSize": 4,
+    "eventPosterUrl": "",
+    "eventDetails": "A 24-hour product-building hackathon where teams solve real campus and community problems using web, AI, automation, or IoT. Participants will pitch their prototype to mentors and judges."
+  },
+  {
+    "id": "ai-starter-webinar",
+    "eventName": "AI Starter Webinar",
+    "eventType": "Webinar",
+    "eventDates": "June 21, 2026",
+    "venue": "Online",
+    "registrationFees": "Free",
+    "teamSize": 1,
+    "eventPosterUrl": "",
+    "eventDetails": "A beginner-friendly session on machine learning workflows, prompt engineering, AI tools, and how students can start building practical AI projects without getting lost in theory."
+  },
+  {
+    "id": "web-api-workshop",
+    "eventName": "Web API Workshop",
+    "eventType": "Workshop",
+    "eventDates": "June 28, 2026",
+    "venue": "Computer Lab 2, College 2",
+    "registrationFees": "₹99 per student",
+    "teamSize": 1,
+    "eventPosterUrl": "",
+    "eventDetails": "A hands-on workshop focused on building REST APIs, connecting frontend forms, validating data, and preparing a project for backend integration with SQLite."
+  },
+  {
+    "id": "cyber-ctf-night",
+    "eventName": "Cyber CTF Night",
+    "eventType": "CTF",
+    "eventDates": "July 5, 2026",
+    "venue": "Innovation Lab, College 3",
+    "registrationFees": "₹199 per team",
+    "teamSize": 3,
+    "eventPosterUrl": "",
+    "eventDetails": "A capture-the-flag challenge covering web security, cryptography basics, forensics, and logical puzzles. Designed for students who want a practical entry into cybersecurity."
+  },
+  {
+    "id": "iot-prototype-lab",
+    "eventName": "IoT Prototype Lab",
+    "eventType": "Workshop",
+    "eventDates": "July 12, 2026",
+    "venue": "Electronics Lab, College 4",
+    "registrationFees": "₹149 per student",
+    "teamSize": 1,
+    "eventPosterUrl": "",
+    "eventDetails": "A guided lab where students explore sensors, microcontrollers, data collection, and small automation prototypes that can be extended into real club projects."
+  }
+]

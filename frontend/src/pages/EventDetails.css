@@ -1,0 +1,316 @@
+.event-details-page {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 72px 0 96px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 42px;
+  margin-bottom: 24px;
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--cyan);
+  background: rgba(22, 200, 255, 0.08);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.event-details-hero {
+  display: grid;
+  grid-template-columns: 0.78fr 1fr;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.event-details-poster {
+  min-height: 520px;
+  border: 1px solid rgba(147, 166, 184, 0.14);
+  border-radius: 24px;
+  background: rgba(3, 8, 15, 0.72);
+  box-shadow: 0 18px 58px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.event-details-poster img,
+.event-detail-poster-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+}
+
+.event-details-poster img {
+  object-fit: cover;
+}
+
+.event-detail-poster-placeholder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 22% 20%, rgba(22, 200, 255, 0.38), transparent 9rem),
+    radial-gradient(circle at 78% 74%, rgba(73, 242, 178, 0.18), transparent 12rem),
+    linear-gradient(145deg, #06101e, #02050a);
+}
+
+.event-detail-poster-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 24px;
+  border: 1px solid rgba(22, 200, 255, 0.24);
+  border-radius: 20px;
+}
+
+.event-detail-poster-placeholder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(22, 200, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(22, 200, 255, 0.08) 1px, transparent 1px);
+  background-size: 30px 30px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.event-detail-poster-placeholder span,
+.event-detail-poster-placeholder strong,
+.event-detail-poster-placeholder small {
+  position: relative;
+  z-index: 1;
+}
+
+.event-detail-poster-placeholder span {
+  width: fit-content;
+  padding: 8px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--cyan);
+  background: rgba(22, 200, 255, 0.08);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.event-detail-poster-placeholder strong {
+  max-width: 380px;
+  font-size: 3rem;
+  line-height: 0.98;
+}
+
+.event-detail-poster-placeholder small {
+  color: var(--muted);
+  font-weight: 900;
+}
+
+.event-details-copy {
+  padding: 34px;
+  border: 1px solid rgba(147, 166, 184, 0.14);
+  border-radius: 24px;
+  background: var(--panel);
+  box-shadow: 0 18px 58px rgba(0, 0, 0, 0.2);
+}
+
+.event-details-copy h1 {
+  font-size: 3.4rem;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.event-details-copy > p {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.event-detail-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 30px 0 0;
+}
+
+.event-detail-meta div {
+  min-height: 110px;
+  padding: 16px;
+  border: 1px solid rgba(147, 166, 184, 0.14);
+  border-radius: 16px;
+  background: rgba(3, 8, 15, 0.42);
+}
+
+.event-detail-meta dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.event-detail-meta dd {
+  margin: 10px 0 0;
+  color: var(--text);
+  font-size: 1.02rem;
+  font-weight: 900;
+}
+
+.registration-form {
+  margin-top: 30px;
+  padding: 30px;
+  border: 1px solid rgba(147, 166, 184, 0.14);
+  border-radius: 24px;
+  background: var(--panel);
+  box-shadow: 0 18px 58px rgba(0, 0, 0, 0.2);
+}
+
+.form-heading {
+  max-width: 700px;
+  margin-bottom: 24px;
+}
+
+.form-heading h2 {
+  font-size: 2.2rem;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.form-heading > p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.form-grid,
+.teammates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.registration-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.registration-form input {
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid rgba(147, 166, 184, 0.2);
+  border-radius: 12px;
+  color: var(--text);
+  background: rgba(3, 8, 15, 0.54);
+  padding: 12px 14px;
+  outline: none;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.registration-form input:focus {
+  border-color: var(--line-strong);
+  box-shadow: 0 0 0 4px rgba(22, 200, 255, 0.12);
+}
+
+.registration-form input::placeholder {
+  color: rgba(147, 166, 184, 0.68);
+}
+
+.teammates-section {
+  margin-top: 28px;
+}
+
+.teammates-section h3 {
+  font-size: 1.4rem;
+  line-height: 1.1;
+}
+
+.teammates-section > p {
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+.teammates-grid {
+  margin-top: 16px;
+}
+
+.teammate-card {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 18px;
+  border: 1px solid rgba(22, 200, 255, 0.18);
+  border-radius: 18px;
+  background: rgba(22, 200, 255, 0.06);
+}
+
+.teammate-card legend {
+  padding: 0 8px;
+  color: var(--cyan);
+  font-weight: 900;
+}
+
+.register-button {
+  min-height: 52px;
+  margin-top: 28px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 12px;
+  color: #031018;
+  background: var(--cyan);
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 0 18px 48px rgba(22, 200, 255, 0.22);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 54px rgba(22, 200, 255, 0.24);
+}
+
+.success-message {
+  width: fit-content;
+  margin-top: 18px;
+  padding: 12px 14px;
+  border: 1px solid rgba(73, 242, 178, 0.34);
+  border-radius: 12px;
+  color: #bfffe7;
+  background: rgba(73, 242, 178, 0.1);
+  font-weight: 900;
+}
+
+@media (max-width: 920px) {
+  .event-details-hero,
+  .event-detail-meta,
+  .form-grid,
+  .teammates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-details-copy h1 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .event-details-page {
+    width: min(100% - 28px, 1180px);
+    padding-top: 56px;
+  }
+
+  .event-details-copy,
+  .registration-form {
+    padding: 22px;
+  }
+
+  .event-details-copy h1,
+  .event-detail-poster-placeholder strong {
+    font-size: 2.15rem;
+  }
+}
