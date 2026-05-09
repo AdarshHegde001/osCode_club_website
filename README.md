@@ -19,10 +19,10 @@ Backend
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/os-code-club-website.git
+git clone https://github.com/AdarshHegde001/osCode_club_website
 
 # Navigate into the project folder
-cd os-code-club-website
+cd osCode_club_website
 
 # Install dependencies
 npm install
