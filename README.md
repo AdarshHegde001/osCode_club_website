@@ -24,6 +24,9 @@ git clone https://github.com/AdarshHegde001/osCode_club_website
 # Navigate into the project folder
 cd osCode_club_website
 
+#navigate to frontend folder
+cd frontend
+
 # Install dependencies
 npm install
 
